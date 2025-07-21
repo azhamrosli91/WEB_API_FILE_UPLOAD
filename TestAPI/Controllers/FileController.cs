@@ -16,7 +16,7 @@ namespace TestAPI.Controllers
                 return BadRequest("Invalid File");
             }
 
-            var folderName = Path.Combine("Resumes");
+            var folderName = Path.Combine("Uploads");
             var pathToSave = Path.Combine(Directory.GetCurrentDirectory(), folderName);
             if (!Directory.Exists(pathToSave))
             {
